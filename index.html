@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>АльфаТрейд</title>
+    <link rel='icon' href='img/logo.png' type=”image/x-icon”>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script defer src="js/script.js"></script>
+    <script src="js/js/jquery.maskedinput.js"></script>
+    <script src="js/js/jquery.validate.min.js"></script>
+    <script src="js/js/script.js"></script>
+    <script src="js/opacity.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+              <a class="logo">
+                  <img src="img/logo.png" alt="АльфаТрейд" width="60" height="60">
+              </a>
+              <ul class="site-menu">
+                  <li><a  target="_blank">АльфаТрейд</a></li>
+                  <li><a href="#" target="_blank"><div class="dropdown">
+                    <a class="dropbtn">Меню</a>
+                    <div class="dropdown-content">
+                      <a href="#application">Заявка</a>
+                      <a href="#contacts">Контакты</a>
+                      <a href="#root">Типы перевозок</a>
+                    </div>
+                  </div></a></li>
+                  <li><a href="tel:+79225013013" target="_blank" class="phone_number">+7 (922) 5-013-013 </a></li>
+              </ul>
+              <ul class="contacts-menu">
+                  <li>
+                      <a href="mailto:mail@example.com" class="icon-mail" title="Написать нам">
+                          <img src="img/mail-icon.png" alt='imail'>
+                      </a>
+                </li>
+                  <li>
+                      <a href="tel:+380985554433" class="icon-phone" title="Позвонить нам">
+                          <img src="img/phone-icon.png" alt='phone'>
+                      </a>
+                  </li>
+                    <li>
+                      <a href='https://t.me/PepeFr09' target="_blank" class="icon-phone"><img src="img/Telegram_Logo-color.png"></a>
+                    </li>
+                    <li>
+                        <a href='viber://chat?number=%2B9226854422' class="icon-phone"><img src="img/viber_Logo-color.png"></a>
+                        <li>
+                            <a class="icon-phone"><img src="img/WhatsApp_logo_icon-color.png"></a>
+                          </li>
+                      </li>
+              </ul>
+            </nav>
+            <section>
+                <div class='route'>
+                <a><span>Перевозки по России</span><img src="img/1614559749_91-p-rossiya-na-belom-fone-111.png"><div class='disc'><p>Транспортные перевозки по России осуществляются в населённые пункты южных, центральных, северных областей <br>страны, а также в юго-восточные регионы и на Дальний Восток </p></div></a>
+                <a><span>Перевозки по СНГ</span><img src="img/scale_1200.png"><div class='disc'><p>СНГ, Турция, Польша, Словакия, Румыния,<br> Молдова, Эстония, Литва, Латвия</p></div></a>
+                </div>
+            </section>
+        <section class="vacation-request">
+            <div class="container columns-container">
+                <h2 class="visually-hidden">Заявка</h2>
+                <div class="left-column">
+                    <p class="lead"><b>Почему выбирают нас?</b></p>
+                    <p class="why">- Ответственность застрахована - ваш товар в полной безопасности!<br>
+                    -	Водители с опытом от 5 лет - гарантия доставки в срок!<br>
+                        -	Собственный автопарк и надежные партнерская сеть - гибкое ценообразование.<br>
+                        </p>
+                </div>
+                <div>
+                    <p class="calc">Рассчитать стоимость перевозки</p>
+                    <form id="application" action="sender.php" class="vacation-request-form" method="post">
+                        <p>
+                          <label for="punkt_otpr" class="visually-hidden punkt_otpr">Пункт отправления</label>
+                          <input class='form' id="punkt_otpr" name="punkt_otpr" type="text" placeholder="Пункт отправления">
+                        </p>
+                        <p>
+                          <label for="puntk_nazn" class="visually-hidden puntk_nazn">Пункт назначения </label>
+                          <input class='form' id="phone" name="puntk_nazn" type="text" placeholder="Пункт назначения">
+                        </p>
+                        <p>
+                            <label for="volume" class="visually-hidden volume">Объём</label>
+                            <input class='form' id='volume' type="text" placeholder="Объём" name="volume">
+                          </p>
+                          <p>
+                            <label for="package" class="visually-hidden package">Упаковка</label>
+                            <input class='form' id='package' type="text" name='package' placeholder="Упаковка">
+                          </p>
+                          <p>
+                            <label for="hidden" class="visually-hidden" >Номер для обратной связи</label>
+                            <input class='form' type="phone" placeholder="Номер для обратной связи" id="phone" name="phone" requared>
+                          </p>
+                        <div class="half">
+                        <p class="half-field">
+                          <label for="type_carg" class="visually-hidden type_carg">Вид груза</label>
+                          <input class='form' id="type_carg" name="type_carg" type="text" placeholder="Вид груза">
+                        </p>
+                        <p class="half-field">
+                          <label for="weight" class="visually-hidden weight">Вес</label>
+                          <input class='form' id="weight" name="weight" type="text" placeholder="Вес">
+                        </p>
+                        </div>
+                        <p>
+                          <label><input name="agreement" type="checkbox" required>Согласен(а) на обработку персональных данных</label>
+                        </p>
+                        <p>
+                          <button  class="btn btn-grey"><a target="_blank">Отправить</a></button>
+                        </p>
+                        <p> 
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <p class="zak">У нас заказывают</p>
+        <section id="root" class="three">
+          <div>
+            <div class="stack_text">
+              <p>Тентованный</p>
+              <p class="desctn" id="dc_tent">Стройматериалы, продукты не требующие режима, изделия из металлаи др</p>
+            </div>
+            <div onmouseover="changeItemTent()" onmouseout="rechangeItemTent()">
+              <a id="img_tent" ><img src="img/img-polupricep.png" class="tent"></a>
+            </div>
+          </div>
+          <div onmouseover="changeItemRef()" onmouseout="rechangeItemRef()">
+              <div class="stack_text">
+                <p>Рефрижераторный</p>
+                <p class="desctn" id="dc_ref">Продукты питания с режимом от +25 до - 25, растения,стройматериалы и др</p>
+              </div>
+              <div>
+                 <a id="img_ref"><img src="img/myltitemperatyra.png" class="ref"></a>
+              </div>
+          </div>
+          <div onmouseover="changeItemOpen()" onmouseout="rechangeItemOpen()">
+              <div class="stack_text">
+                <p>Открытые</p>
+                <p class="desctn" id="dc_open">Cтроительные материалы, изделия из металла, оборудование, автомобили и др</p>
+              </div>
+              <div>
+                <a id="img_open"><img src="img/open.png" class="open"></a>
+              </div>
+          </div>
+          <div onmouseover="changeItemSpec()" onmouseout="rechangeItemSpec()">
+              <div class="stack_text">
+                <p>Специализированный</p>
+                <p class="desctn" id="dc_spec">Опасные,негабаритные наливные грузы</p>
+              </div>
+              <div>
+                <a id="img_spec"><img src="img/Spec.png" class="spec"></a>
+              </div>
+          </div>
+        </section>
+        <p class="trust">Нам доверяют много лет:</p>
+        <div class="slider middle">
+          <div class="slides">
+            <input type="radio" name="r" id="r1" checked />
+            <input type="radio" name="r" id="r2" />
+
+            <div class="slide s1"><img src="img/Pismo_Tatneft.svg"  alt="На картинке Tatneft"></div>
+            <div class="slide rp"><img src="img/Pismo_blagodarstvennoe_Glass_Dekor.svg"  alt="На картинке Glass Dekor"></div>
+            <div class="slide second_slide"><img src="img/Pismo_Provans.svg"  alt="На картинке Provans"></div>
+            <div class='slide rp'><img src="img/Pismo_OPK.svg"  alt="На картинке OPK"></div>
+          </div>
+          <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+          </div>
+        </div>
+        </header>
+    <footer class="site-footer">
+        <div class="container flex">
+            <div class="left-column">
+                <p class="logo-container">
+                    <a class="logo"><img src="img/logo.png" alt="Логотип АльфаТрейд" width="60" height="60"></a>
+                    <span>АльфаТрейд</span>
+                </p>
+                <div class="footer_icon_div">
+                <ul class='footer-icon'>
+                    <li>
+                        <a href="mailto:mail@example.com" class="icon-mail" title="Написать нам">
+                            <img src="img/mail-icon.png" alt='imail'>
+                        </a>
+                  </li>
+                    <li>
+                        <a href="tel:+380985554433" class="icon-phone" title="Позвонить нам">
+                            <img src="img/phone-icon.png" alt='phone'>
+                        </a>
+                    </li>
+                      <li>
+                        <a class="icon-phone" href='https://t.me/PepeFr09'><img src="img/Telegram_Logo-color.png"></a>
+                      </li>
+                      <li>
+                          <a class="icon-phone" href="viber://chat?number=%2B9226854422"><img src="img/viber_Logo-color.png"></a>
+                          <li>
+                              <a class="icon-phone"><img src="img/WhatsApp_logo_icon-color.png"></a>
+                            </li>
+                        </li>
+                </ul>
+                </div>
+                <p class="copyrights">
+                    ООО”АльфаТрейд” <br>
+                </p>
+            </div>
+            <div id='contacts' class="right-column fot">
+                        <a class="foot" href="#">Контакты</a>
+                        <ul class="footer-submenu">
+                            <li><a href="#" target="_blank" >Руководитель отдела<br> собственного транспорта</a></li>
+                            <li><a href="#" target="_blank" >Ваш менеджер</a></li>
+                        </ul>
+            </div>
+          </div>
+    </footer>
+    <script src="js/ofi.min.js"></script>
+    <script src="js/main,1.js"></script>
+</body>
+</html>
