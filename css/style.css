@@ -3,8 +3,8 @@ body{
     padding: 0px;
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
-    background-position: 30% 0%;
-    background-size: 250%;
+    background-position: 10% 0%;
+    background-size: 300%;
     font-family: Verdana, sans-serif;
   /*background-color: #333333;*/
 }
@@ -21,7 +21,8 @@ body{
     color: #ffffff;
 }
 .main-nav{
-  display: flex
+  display: flex;
+  padding-bottom: 5%;
 }
 .logo{
   border-radius: 7px;
@@ -135,6 +136,13 @@ transition: 1s;
     text-shadow: #000000;
     padding-top: 5%;
     font-size: 15px;
+}
+.work_15{
+  font-size: 30px;
+  font-family: century gothic;
+  font-weight: bold;
+  width: 150px;
+  text-align: center;
 }
 .raiting{
   font-size: 40px;
@@ -356,6 +364,10 @@ input[name="r"] {
   display: flex;
   justify-content: space-around;
   /*background-color: #0E0D0B;*/
+  background-image: url(../img/background_2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
   padding-top: 50px;
   padding-bottom: 80px;
   color: gray;   
@@ -380,6 +392,7 @@ display: flex;
   flex-direction: column;
 }
 .copyrights{
+  color: #d4d4d4;
   margin-top: 10%;
 }
 .right-column
@@ -610,7 +623,7 @@ margin-right: 5%;
   }
   .lead{
     font-family: "Courier New", monospace;
-    font-size: 18px
+    font-size: 25px
   }
   .calc{
     margin-left: 10px;
